@@ -1,0 +1,23 @@
+/* PlaybackControls.css */
+.playback-controls {
+    /* grid-column: span 2; */
+    display: flex;
+    justify-content: center;
+    background-color: #3c3c3c;
+    padding: 10px;
+    border-radius: 8px
+  }
+  
+  .playback-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .playback-controls button:hover {
+    color: #ddd;
+  }
+  

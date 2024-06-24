@@ -1,0 +1,40 @@
+/* src/components/SidePanel.css */
+.side-panel {
+  grid-row: span 3;
+  background-color: #2c2c2c;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y:auto;
+}
+
+.status-report {
+  margin-top: 10px;
+}
+
+.status-report p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.report-table th,
+.report-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.report-table th {
+  background-color: #444;
+}
+
+.report-table tbody tr:hover {
+  background-color: #3c3c3c;
+}

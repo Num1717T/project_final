@@ -1,0 +1,18 @@
+/* src/App.css */
+.App {
+  display: flex;
+  height: 100vh;
+  background-color: #202020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.video-editor {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
