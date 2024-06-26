@@ -1,15 +1,7 @@
-// src/components/SidePanel.js
 import React from 'react';
 import './SidePanel.css';
 
-const SidePanel = () => {
-  // Array ของคำไม่สุภาพพร้อมด้วยช่วงเวลาที่เจอ
-  const inappropriateWords = [
-    { word: "มึง", time: "00:01:05" },
-    { word: "เวรเอ้ย", time: "00:02:30" },
-    { word: "ยากสัตว์", time: "00:04:15" }
-  ];
-
+const SidePanel = ({ inappropriateWords }) => {
   return (
     <div className="side-panel">
       <div className="status-report">
@@ -26,7 +18,7 @@ const SidePanel = () => {
               {inappropriateWords.map((entry, index) => (
                 <tr key={index}>
                   <td>{entry.word}</td>
-                  <td>{entry.time}</td>
+                  <td>{new Date(entry.start_time * 1000).toISOString().substr(11, 8)}</td>
                 </tr>
               ))}
             </tbody>

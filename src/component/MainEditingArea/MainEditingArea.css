@@ -1,14 +1,15 @@
 /* MainEditingArea.css */
 .main-editing-area {
-    grid-column: span 2;
-    background-color: #1c1c1c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .video-preview {
-    max-width: 100%;
-    height: auto;
-  }
-  
+  grid-column: span 2;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.video-preview {
+  width: 500px;
+  height: 400px;
+}

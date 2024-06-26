@@ -1,11 +1,17 @@
-// src/components/MainEditingArea.js
 import React from 'react';
 import './MainEditingArea.css';
 
-const MainEditingArea = () => {
+const MainEditingArea = ({ videoFile }) => {
   return (
     <div className="main-editing-area">
-      <img src="/path-to-your-image.jpg" alt="Video Preview" className="video-preview" />
+      {videoFile ? (
+        <video controls className="video-preview">
+          <source src={videoFile} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <p>โปรดนำเข้าคลิปเพื่อเริ่มการตัดต่อ</p>
+      )}
     </div>
   );
 };

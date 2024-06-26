@@ -1,10 +1,11 @@
-/* src/App.css */
+/* App.css */
 .App {
-  display: flex;
+  font-family: 'Arial', sans-serif;
+  background-color: #2d2d2d;
+  color: #fff;
   height: 100vh;
-  background-color: #202020;
-  color: white;
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .video-editor {
@@ -12,7 +13,59 @@
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 10px;
-  width: 100%;
+  height: 100%;
+}
+
+.navigation-panel {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  
+}
+
+.main-editing-area {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.playback-controls {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: center;
   padding: 10px;
-  box-sizing: border-box;
+}
+
+.side-panel {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.video-preview {
+  width: 500px;
+  height: 400px;
+}
+
+.navigation-panel .import-media-button,
+.playback-controls button {
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navigation-panel .import-media-button:hover,
+.playback-controls button:hover {
+  background-color: #555;
 }

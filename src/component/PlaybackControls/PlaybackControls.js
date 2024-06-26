@@ -1,15 +1,11 @@
-// src/components/PlaybackControls.js
 import React from 'react';
 import './PlaybackControls.css';
 
-const PlaybackControls = () => {
+const PlaybackControls = ({ onCalculate, onDelete }) => {
   return (
     <div className="playback-controls">
-      <button>⏮️</button>
-      <button>⏪</button>
-      <button>⏯️</button>
-      <button>⏩</button>
-      <button>⏭️</button>
+      <button onClick={onCalculate}>Calculate</button>
+      <button onClick={onDelete}>ลบวิดีโอ</button>
     </div>
   );
 };
